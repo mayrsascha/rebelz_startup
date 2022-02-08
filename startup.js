@@ -94,7 +94,7 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"tslib":"Fivg","@sentry/utils":"vnUD","./api":"DsIj"}],"Bvms":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.initAndBind=t;var e=require("@sentry/hub"),r=require("@sentry/utils");function t(t,i){!0===i.debug&&r.logger.enable();var n=(0,e.getCurrentHub)(),u=n.getScope();u&&u.update(i.initialScope);var o=new t(i);n.bindClient(o)}
 },{"@sentry/hub":"U9M5","@sentry/utils":"vnUD"}],"qTdY":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.SDK_VERSION=void 0;var e="6.17.5";exports.SDK_VERSION=e;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.SDK_VERSION=void 0;var e="6.17.6";exports.SDK_VERSION=e;
 },{}],"ON5N":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.FunctionToString=void 0;var t,n=require("@sentry/utils"),o=function(){function o(){this.name=o.id}return o.prototype.setupOnce=function(){t=Function.prototype.toString,Function.prototype.toString=function(){for(var o=[],i=0;i<arguments.length;i++)o[i]=arguments[i];var r=(0,n.getOriginalFunction)(this)||this;return t.apply(r,o)}},o.id="FunctionToString",o}();exports.FunctionToString=o;
 },{"@sentry/utils":"vnUD"}],"PwYX":[function(require,module,exports) {
