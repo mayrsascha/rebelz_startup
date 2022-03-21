@@ -102,7 +102,7 @@ var t=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0}),export
 },{"tslib":"Fivg","@sentry/utils":"vnUD","./api":"DsIj"}],"Bvms":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.initAndBind=i;var e=require("@sentry/hub"),n=require("@sentry/utils");function i(i,t){!0===t.debug&&((0,n.isDebugBuild)()?n.logger.enable():console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle."));var r=(0,e.getCurrentHub)(),u=r.getScope();u&&u.update(t.initialScope);var o=new i(t);r.bindClient(o)}
 },{"@sentry/hub":"U9M5","@sentry/utils":"vnUD"}],"qTdY":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.SDK_VERSION=void 0;var e="6.19.0";exports.SDK_VERSION=e;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.SDK_VERSION=void 0;var e="6.19.1";exports.SDK_VERSION=e;
 },{}],"ON5N":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.FunctionToString=void 0;var t,n=require("@sentry/utils"),o=function(){function o(){this.name=o.id}return o.prototype.setupOnce=function(){t=Function.prototype.toString,Function.prototype.toString=function(){for(var o=[],i=0;i<arguments.length;i++)o[i]=arguments[i];var r=(0,n.getOriginalFunction)(this)||this;return t.apply(r,o)}},o.id="FunctionToString",o}();exports.FunctionToString=o;
 },{"@sentry/utils":"vnUD"}],"PwYX":[function(require,module,exports) {
